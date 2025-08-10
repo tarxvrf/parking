@@ -1,102 +1,199 @@
+import { Poppins } from "next/font/google";
+import React from "react";
+import { FaCar, FaPhoneAlt, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
+import { pop,car } from "./font";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+export default function ParkingCompanyProfile() {
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+  
+
+  return (
+    <div className="bg-white text-gray-800">
+      {/* Header */}
+      <header className="flex items-center justify-between px-6 py-4 shadow-md bg-gradient-to-r from-amber-500 to-white  text-white">
+        <h1 className="text-2xl font-bold">ParkirPro</h1>
+        <nav className="space-x-6 hidden md:flex">
+          <a href="#about" className="hover:underline">Tentang</a>
+          <a href="#services" className="hover:underline">Layanan</a>
+          <a href="#partners" className="hover:underline">Partner</a>
+          <a href="#reviews" className="hover:underline">Review</a>
+          <a href="#contact" className="hover:underline">Kontak</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="text-center py-20 bg-gradient-to-r from-amber-500 to-white">
+        <div className="grid md:grid-cols-2 gap-10 items-center mx-auto px-6 ">
+          <div className="col-span-1">
+            <h2 className={`${pop.variable}  text-3xl md:text-5xl font-bold mb-4 text-white`}>
+              
+              Solusi Parkir Modern dan Aman
+            </h2>
+            <p className={`${car.className} text-lg text-gray-700 mb-8`}>
+              Kelola area parkir Anda dengan sistem digital terbaik.
+            </p>
+            <a
+              href="#contact"
+              className="bg-green-700 text-white px-6 py-3 rounded-full hover:bg-green-800 transition"
+            >
+              Konsultasi Sekarang
+            </a>
+          </div>
+          <div>
+            <img src="../images/parking1.jpg" alt="Parkir Digital" className="rounded-xl w-full mx-auto" />
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="max-w-6xl mx-auto px-6 py-16">
+        <h3 className={`${pop.variable} text-3xl mb-6 font-thin`}>Tentang ParkirPro</h3>
+        <p className="text-gray-700 leading-relaxed">
+          ParkirPro adalah perusahaan penyedia solusi manajemen parkir terintegrasi
+          dengan teknologi terbaru. Kami membantu institusi, gedung, dan bisnis
+          mengoptimalkan pengelolaan parkir dengan sistem otomatis dan keamanan tinggi.
+        </p>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="bg-gray-100 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-3xl  mb-10 text-amber-500 font-bold text-center">
+            Layanan Kami
+          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <FaCar className="text-green-600 text-4xl mb-4" />
+              <h4 className="text-xl font-bold mb-2">Sistem Parkir Otomatis</h4>
+              <p className="text-gray-600">
+                Solusi parkir dengan sensor, gate, dan sistem tiket digital.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <FaCar className="text-green-600 text-4xl mb-4" />
+              <h4 className="text-xl font-bold mb-2">Aplikasi Monitoring</h4>
+              <p className="text-gray-600">
+                Pantau ketersediaan parkir secara real-time melalui dashboard.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <FaCar className="text-green-600 text-4xl mb-4" />
+              <h4 className="text-xl font-bold mb-2">Keamanan Area Parkir</h4>
+              <p className="text-gray-600">
+                Kamera CCTV & sistem pelat nomor untuk keamanan maksimal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/** Fitur yang kami punya */}
+      <section id="fitur" className="bg-amber-100 py-16">
+        <div className="mx-auto px-6 max-w-6xl">
+          <h3 className="text-3xl font-semibold text-center mb-10">Fitur Yang kami Punya</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <Image className="rounded-3xl mb-2" width={500} height={500} src={"/images/qris1.jpg"} alt={""}></Image>
+              <h3 className={`${pop.variable} font-thin`}>QRIS</h3>
+            </div>
+
+            <div className="rounded-2xl ">
+              <Image className="rounded-3xl mb-2" width={500} height={500} src={"/images/cashles.jpg"} alt={""}></Image>
+             
+            </div>
+          </div>
+        </div>
+    
+
+      </section>
+
+      {/* Partners Section */}
+      <section id="partners" className="py-16 bg-white px-6 max-w-6xl mx-auto text-center">
+        <h3 className="text-3xl font-semibold mb-8">Telah Dipercaya Oleh</h3>
+        <div className="flex flex-wrap justify-center items-center gap-8">
+          <img src="../images/build1.jpg" alt="Partner 1" className="h-16" />
+          <img src="../images/build2.jpg" alt="Partner 2" className="h-16" />
+          <img src="../images/build3.jpg" alt="Partner 3" className="h-16" />
+          <img src="/partner4.png" alt="Partner 4" className="h-16" />
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section id="reviews" className="bg-gray-100 py-16 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h3 className="text-3xl font-semibold mb-6">Apa Kata Klien Kami</h3>
+            <div className="space-y-6">
+             
+              <div className="bg-white p-6 rounded-2xl shadow-md">
+                <p className="italic text-gray-600 mb-4">
+                  "Teknologi yang digunakan canggih dan mudah diintegrasikan."
+                </p>
+                <p className="font-bold">- Sari, Developer IT</p>
+              </div>
+              <div className="bg-white p-6 rounded-2xl shadow-md">
+                <p className="italic text-gray-600 mb-4">
+                  "Keamanan parkir meningkat drastis sejak menggunakan layanan ini."
+                </p>
+                <p className="font-bold">- Andi, Pemilik Mall</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="../images/parking1.jpg" alt="Review Pelanggan" className="w-full h-96 rounded-2xl shadow-lg" />
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form */}
+      <section className="bg-white py-16 px-6 max-w-3xl mx-auto">
+        <h3 className="text-3xl font-semibold mb-8 text-center">Hubungi Kami</h3>
+        <form className="space-y-6">
+          <input
+            type="text"
+            placeholder="Nama Anda"
+            className="w-full border border-gray-300 px-4 py-3 rounded-lg"
+          />
+          <input
+            type="email"
+            placeholder="Email Anda"
+            className="w-full border border-gray-300 px-4 py-3 rounded-lg"
+          />
+          <textarea
+            placeholder="Pesan Anda"
+            rows={5}
+            className="w-full border border-gray-300 px-4 py-3 rounded-lg"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-green-700 text-white px-6 py-3 rounded-full hover:bg-green-800 transition"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer id="contact" className="bg-green-700 text-white py-10 px-6 text-center">
+        <h4 className="text-xl font-bold mb-4">Kontak</h4>
+        <div className="flex flex-col md:flex-row justify-center gap-8 mb-4">
+          <div className="flex items-center gap-2">
+            <FaPhoneAlt /> <span>0812-3456-7890</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaMapMarkerAlt /> <span>Jl. Parkir Digital No.1, Jakarta</span>
+          </div>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://wa.me/6281234567890"
+            className="flex items-center gap-2 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            <FaWhatsapp /> <span>Chat via WhatsApp</span>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <p className="text-sm text-green-200">&copy; 2025 ParkirPro. Semua Hak Dilindungi.</p>
       </footer>
     </div>
   );
