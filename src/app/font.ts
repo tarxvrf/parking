@@ -1,4 +1,4 @@
-import { Cairo, Geist_Mono, Poppins } from "next/font/google";
+import { Cairo, Poppins } from "next/font/google";
 
 export const pop =Poppins({
     weight:['100'],

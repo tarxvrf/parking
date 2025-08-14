@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Framepage from "./Framepage/page";
+
       
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body>
-        <Framepage>
+      
           {children}
-        </Framepage>
+   
       </body>
     </html>
   );

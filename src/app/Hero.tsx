@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { car, pop } from "./font";
-import Image from "next/image";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,7 +15,7 @@ function Hero() {
     }, 5000); // ganti gambar tiap 5 detik
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   return (
     <section className="h-screen flex items-center justify-center pt-32 ">

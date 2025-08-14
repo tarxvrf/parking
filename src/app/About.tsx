@@ -1,5 +1,4 @@
 import React from "react";
-import { pop } from "./font";
 import Image from "next/image";
 
 function About() {

@@ -24,7 +24,7 @@ function Review() {
         <Image width={100} height={100} src="/images/user1.jpg" alt="User 1" 
              className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"/>
         <p className="text-gray-600 italic">
-          "Layanan parkir sangat memudahkan, gate otomatis berjalan lancar dan pembayaran cashless sangat praktis."
+          Layanan parkir sangat memudahkan, gate otomatis berjalan lancar dan pembayaran cashless sangat praktis.
         </p>
         <h4 className="mt-4 font-semibold text-gray-900">Budi Santoso</h4>
         <span className="text-sm text-gray-500">Manager Operasional</span>
@@ -35,7 +35,7 @@ function Review() {
       <Image width={100} height={100} src="/images/user2.jpg" alt="User 2" 
              className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"/>
         <p className="text-gray-600 italic">
-          "Sangat profesional, respon cepat, dan sistem monitoring real-time sangat membantu pekerjaan kami."
+          Sangat profesional, respon cepat, dan sistem monitoring real-time sangat membantu pekerjaan kami.
         </p>
         <h4 className="mt-4 font-semibold text-gray-900">Siti Rahma</h4>
         <span className="text-sm text-gray-500">Direktur Mall Central</span>
@@ -45,7 +45,7 @@ function Review() {
         <Image width={100} height={100}src="/images/user3.jpg" alt="User 3" 
              className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"/>
         <p className="text-gray-600 italic">
-          "GB Parking benar-benar membuat pengalaman parkir jauh lebih nyaman dan aman."
+          GB Parking benar-benar membuat pengalaman parkir jauh lebih nyaman dan aman.
         </p>
         <h4 className="mt-4 font-semibold text-gray-900">Andi Prasetyo</h4>
         <span className="text-sm text-gray-500">Owner Hotel Grand</span>

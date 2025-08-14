@@ -1,17 +1,12 @@
 "use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 
 function Header() {
   
-  const path = usePathname();
+
   const [isScrolled, setIsScrolled] = useState(false);
-  const linkmenu = [
-    { name: "Home", path: "/" },
-    { name: "Contact", path: "/tentang" },
-  ];
+
 
     useEffect(() => {
     const handleScroll = () => {

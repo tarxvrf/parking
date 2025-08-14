@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCar } from "react-icons/fa";
+
 
 function Service() {
   return (
