@@ -17,7 +17,7 @@ export default function ParkingCompanyProfile() {
   
 
   return (
-    <div className=" "> 
+    <div > 
     <Hero/> 
     <About/> 
     <Service/>

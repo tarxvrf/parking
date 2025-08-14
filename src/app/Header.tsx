@@ -20,10 +20,10 @@ function Header() {
 
   
     <nav className="hidden md:flex space-x-6">
-      <a href="#home" className="text-white hover:text-green-400">Home</a>
-      <a href="#services" className="text-white hover:text-green-400">Layanan</a>
-      <a href="#portfolio" className="text-white hover:text-green-400">Portfolio</a>
-      <a href="#contact" className="text-white hover:text-green-400">Kontak</a>
+      <a href="#home" className="text-white hover:text-amber-400 font-bold">Home</a>
+      <a href="#services" className="text-white hover:text-amber-400 font-bold">Layanan</a>
+      <a href="#portfolio" className="text-white hover:text-amber-400 font-bold">Portfolio</a>
+      <a href="#contact" className="text-white hover:text-amber-400 font-bold">Kontak</a>
     </nav>
 
     
