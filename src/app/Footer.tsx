@@ -5,19 +5,12 @@ function Footer() {
  
       <footer className="relative text-black ">
      
-          <Image
-            width={1080}
-            height={275}
-            alt="GB Parking"
-            className="w-full object-cover"
-            src={"/images/footer2.png"}
-          />
-       
+        
 
-        <div className="absolute inset-0 max-w-7xl mx-auto lg:pt-20 pt-5 px-4 sm:px-6 lg:px-20">
+        <div className="absolute inset-0 py-6 max-w-7xl mx-auto lg:pt-20 pt-5 px-4 sm:px-6 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">          
 
-            <div className="pl-10">
+            <div className="px-2 md:pl-2">
               <h4 className="text-black font-semibold mb-4">Menu</h4>
               <ul className="space-y-2">
                 <li>
@@ -64,7 +57,7 @@ function Footer() {
               </p>
             </div>
 
-            <div className="pl-16">
+            <div className="pb-6">
               <h4 className="text-black font-semibold mb-4">Ikuti Kami</h4>
               <div className="flex space-x-4">
                 <a href="#" className="hover:text-white transition">
@@ -99,6 +92,17 @@ function Footer() {
           </div>
 
         </div>
+        <div className="relative">
+            <Image
+            width={1080}
+            height={275}
+            alt="GB Parking"
+            className="w-full object-cover"
+            src={"/images/footer2.png"}
+          />
+        </div>
+        
+       
       </footer>
 
   );
