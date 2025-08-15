@@ -6,7 +6,7 @@ function Partner() {
     <div>
       {" "}
       {/* Partners Section */}
-      <section id="partners" className="py-16 bg-gray-50">
+      <section id="partners" className="pb-32 pt-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -19,14 +19,14 @@ function Partner() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+          <div className="pt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
             <div className="flex justify-center ">
               <Image
                 width={100}
                 height={100}
-                src="/images/favicon.ico"
+                src="/images/alfresh.jpeg"
                 alt="Client 1"
-                className="h-12 object-contain filter grayscale  transform hover:-translate-y-2 transition"
+                className="h-32 w-32 object-contain border bg-white rounded-full shadow-md hover:shadow-2xl  transform hover:-translate-y-2 transition"
               />
             </div>
 
@@ -34,9 +34,9 @@ function Partner() {
               <Image
                 width={100}
                 height={100}
-                src="/images/favicon.ico"
+                src="/images/m165.jpeg"
                 alt="Client 2"
-                className="h-12 object-contain filter grayscale transform hover:-translate-y-2 transition"
+                className="h-32 w-32 object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
               />
             </div>
 
@@ -44,40 +44,40 @@ function Partner() {
               <Image
                 width={100}
                 height={100}
-                src="/images/favicon.ico"
+                src="/images/boxis.jpeg"
                 alt="Client 3"
-                className="h-12 object-contain filter grayscale hover:grayscale-0 transition duration-300"
-              />
+                 className="h-32 w-32 object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+            />
             </div>
 
             <div className="flex justify-center">
               <Image
                 width={100}
                 height={100}
-                src="/images/favicon.ico"
+                src="/images/detos.jpg"
                 alt="Client 4"
-                className="h-12 object-contain filter grayscale hover:grayscale-0 transition duration-300"
-              />
+                 className="h-32 w-32 object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+            />
             </div>
 
             <div className="flex justify-center">
               <Image
                 width={100}
                 height={100}
-                src="/images/favicon.ico"
+                src="/images/livingalam.png"
                 alt="Client 5"
-                className="h-12 object-contain hover:grayscale-0 transition duration-300"
-              />
+                  className="h-32 w-32 object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+            />
             </div>
 
             <div className="flex justify-center">
               <Image
                 width={100}
                 height={100}
-                src="/images/favicon.ico"
+                src="/images/bekasi.webp"
                 alt="Client 6"
-                className="h-12 object-contain filter grayscale hover:grayscale-0 transition duration-300"
-              />
+                className="h-32 w-32 object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+            />
             </div>
           </div>
         </div>
