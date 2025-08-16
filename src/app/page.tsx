@@ -15,7 +15,7 @@ export default function ParkingCompanyProfile() {
   
 
   return (
-    <div className="bg-gradient-to-r from-white via-white to-amber-300"> 
+    <div className=""> 
     <Header/>
     <Hero/> 
     <About/> 
