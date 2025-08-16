@@ -50,7 +50,7 @@ function Service() {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="bg-gradient-to-r from-amber-500 via-white to-blue-300 bg-[length:400%_400%] animate-gradient rounded-2xlshadow-lg hover:shadow-xl hover:-translate-y-2 transition duration-300 "
+              className="bg-gradient-to-r from-amber-500 via-white to-blue-300 bg-[length:400%_400%] animate-gradient rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition duration-300 "
             >
               <img
                 src={product.img}
