@@ -18,13 +18,7 @@ export default function ParkingCompanyProfile() {
     <div className=""> 
     <Header/>
     <Hero/> 
-    <About/> 
-    <Service/>
-    <Partner/>
-    <Review/>
-    <Contact/>
-    <FloatingWA/>
-    <Footer/>
+  
     </div>
   );
 }
