@@ -1,5 +1,7 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
+"use client"
+
+import React, { useRef } from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -7,99 +9,65 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 function Service() {
+    const canvasRef = useRef<HTMLCanvasElement>(null);
+   const products = [
+      {
+        name: "Sistem Parkir Otomatis",
+        desc: "Solusi modern untuk manajemen parkir dengan sistem tiket dan sensor otomatis.",
+        img: "/images/qris1.jpg",
+      },
+      {
+        name: "Aplikasi Mobile",
+        desc: "Booking dan pembayaran parkir lebih mudah melalui aplikasi smartphone.",
+        img: "/images/flaz.jpg",
+      },
+      {
+        name: "Smart Barrier Gate",
+        desc: "Gerbang parkir otomatis dengan RFID & ANPR (kamera plat nomor).",
+        img: "/images/gate.jpg",
+      },
+      {
+        name: "Manajemen Lahan Parkir",
+        desc: "Layanan pengelolaan parkir profesional untuk bisnis & properti.",
+        img: "/images/palang.jpg",
+      },
+    ];
   return (
     <div>
       {" "}
       {/* Services Section */}
-      <section id="services" className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Layanan <span className="text-amber-500">Unggulan</span> Kami
-            </h2>
-            <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-              Memberikan solusi parkir modern yang aman, cepat, dan praktis
-              untuk berbagai kebutuhan.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 text-center transform hover:-translate-y-2 ">
-              <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-amber-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 17v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4-4-4 4m4-4v12"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Gate Automation</h3>
-              <p className="text-gray-600 text-sm">
-                Sistem gerbang otomatis dengan teknologi terkini untuk
-                kelancaran akses parkir.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 text-center transform hover:-translate-y-2 transition">
-              <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-amber-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 8c-1.105 0-2 .672-2 1.5s.895 1.5 2 1.5 2-.672 2-1.5S13.105 8 12 8zm0 5c-2.21 0-4 .895-4 2v1h8v-1c0-1.105-1.79-2-4-2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Cashless Payment</h3>
-              <p className="text-gray-600 text-sm">
-                Pembayaran parkir tanpa uang tunai, cepat dan aman dengan
-                berbagai metode.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 text-center transform hover:-translate-y-2 transition">
-              <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-amber-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 3h18M9 3v18m6-18v18"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">
-                Real-Time Monitoring
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Pantau status parkir secara langsung melalui dashboard yang
-                mudah digunakan.
-              </p>
-            </div>
-          </div>
+           <section className="relative bg-gray-50 py-16 px-6  overflow-hidden">
+        {/* 🔹 Background animasi cahaya */}
+        <canvas ref={canvasRef} className="absolute inset-0 z-0" />
+      <div className="relative z-20">
+        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+          Produk & Layanan Kami
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          {products.map((product, index) => (
+            <Card
+              key={index}
+              className="bg-gradient-to-r from-amber-500 via-white to-blue-300 bg-[length:400%_400%] animate-gradient rounded-2xlshadow-lg hover:shadow-xl hover:-translate-y-2 transition duration-300 "
+            >
+              <img
+                src={product.img}
+                alt={product.name}
+                className="w-full h-40 object-cover bg-center px-2 rounded-2xl"
+              />
+              <CardHeader>
+                <CardTitle className="text-lg font-semibold">
+                  {product.name}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">{product.desc}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
         </div>
       </section>
       <div className="mx-auto flex justify-center py-16">

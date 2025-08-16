@@ -32,13 +32,13 @@ function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                    className="mt-1 block p-2 w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block p-2 text-sm font-medium text-gray-700"
                   >
                     Email
                   </label>
@@ -76,7 +76,7 @@ function Contact() {
             <div className="space-y-6">
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  InhtmlFormasi Kantor
+                  Informasi Kantor
                 </h3>
                 <p className="text-gray-700 mb-2">
                   Green Park Office View RD 05,

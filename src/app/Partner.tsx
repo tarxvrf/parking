@@ -27,7 +27,7 @@ function Partner() {
                   height={100}
                   src="/images/alfresh.jpeg"
                   alt="Client 1"
-                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2 object-contain border bg-white rounded-full shadow-md hover:shadow-2xl  transform hover:-translate-y-2 transition"
+                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2 object-contain border bg-white rounded-full shadow-md hover:shadow-xl  transform hover:-translate-y-2 transition"
                 />
               </div>
 
@@ -37,7 +37,7 @@ function Partner() {
                   height={100}
                   src="/images/m165.jpeg"
                   alt="Client 2"
-                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"
                 />
               </div>
 
@@ -47,7 +47,7 @@ function Partner() {
                   height={100}
                   src="/images/boxis.jpeg"
                   alt="Client 3"
-                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"
                 />
               </div>
 
@@ -57,7 +57,7 @@ function Partner() {
                   height={100}
                   src="/images/detos.jpg"
                   alt="Client 4"
-                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"
                 />
               </div>
 
@@ -67,7 +67,7 @@ function Partner() {
                   height={100}
                   src="/images/livingalam.png"
                   alt="Client 5"
-                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"
                 />
               </div>
 
@@ -77,7 +77,7 @@ function Partner() {
                   height={100}
                   src="/images/bekasi.webp"
                   alt="Client 6"
-                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition"
+                  className="w-16 h-16 sm:w-32 sm:h-32 mx-2  object-contain border bg-white rounded-full shadow-md hover:shadow-xl transform hover:-translate-y-2 transition"
                 />
               </div>
             </Marquee>
