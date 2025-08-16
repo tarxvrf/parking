@@ -18,6 +18,7 @@ export default function ParkingCompanyProfile() {
     <div className=""> 
     <Header/>
     <Hero/> 
+    <About/>
   
     </div>
   );
