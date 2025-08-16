@@ -39,9 +39,10 @@ function Service() {
     <div>
       {" "}
       {/* Services Section */}
-      <section className="relative bg-gray-50 py-16 sm:py-20 lg:py-24 px-6 ">
+      <section className=" bg-gray-50 py-16 sm:py-20 lg:py-24 px-6 ">
         {/* 🔹 Background animasi cahaya */}
-        <canvas ref={canvasRef} className="absolute inset-0 z-0" />
+        
+        
         <div className="relative z-20">
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
             Produk & Layanan Kami
