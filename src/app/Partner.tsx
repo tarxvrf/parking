@@ -6,7 +6,7 @@ function Partner() {
     <div>
       {" "}
       {/* Partners Section */}
-      <section id="partners" className="pb-16 pt-16 bg-gray-50">
+      <section id="partners" className="py-16 sm:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

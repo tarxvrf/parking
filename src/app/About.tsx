@@ -6,7 +6,7 @@ function About() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 ">
+      <section id="about" className="py-20 sm:py-24 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image width={500} height={500}

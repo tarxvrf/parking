@@ -5,7 +5,7 @@ function Review() {
   return (
     <div>
       {/* Reviews Section */}
-      <section id="reviews" className="py-20 bg-gray-50">
+      <section id="reviews" className="py-20 sm:py-24 lg:py-28 bg-gray-50">
   <div className="max-w-7xl mx-auto px-6">
    
     <div className="text-center mb-12">

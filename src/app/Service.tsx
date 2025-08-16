@@ -39,7 +39,7 @@ function Service() {
     <div>
       {" "}
       {/* Services Section */}
-           <section className="relative bg-gray-50 py-16 px-6  overflow-hidden">
+           <section className="relative bg-gray-50 py-16 sm:py-20 lg:py-24 px-6  overflow-hidden">
         {/* 🔹 Background animasi cahaya */}
         <canvas ref={canvasRef} className="absolute inset-0 z-0" />
       <div className="relative z-20">
