@@ -42,7 +42,7 @@ function Service() {
       <section className=" bg-gray-50 py-16 sm:py-20 lg:py-24">  
              {/* 🔹 Background animasi cahaya */}
                
-        <div className="relative z-20">
+        <div className="">
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
             Produk & Layanan Kami
           </h2>
@@ -70,6 +70,7 @@ function Service() {
           </div>
         </div>
       </section>
+
       <div className="mx-auto flex justify-center py-16">
         <Carousel className="w-full max-w-xs">
           <CarouselContent>
