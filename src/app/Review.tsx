@@ -67,7 +67,7 @@ function Review() {
     </div>
 
  
-    <div className="w-full h-[450px] rounded-xl overflow-hidden shadow-lg">
+    <div className="w-full h-full rounded-xl overflow-hidden shadow-lg">
       <iframe className='w-full h-full border'
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8245666448775!2d106.7162787749898!3d-6.1542452938328625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f900034810cb%3A0xc4cd56f463190483!2sGerbang%20Berkah%20Solusi%20Indonesia!5e0!3m2!1sen!2sid!4v1755175371755!5m2!1sen!2sid"
          allowFullScreen loading="lazy"

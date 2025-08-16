@@ -19,7 +19,7 @@ function Header() {
 
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 ">
+    <div className=" ">
       {/* Header */}
       <header className={`fixed top-0 left-0 w-full z-50  ${isScrolled ? "bg-amber-500 shadow-xl rounded-b-lg ease-in-out duration-1000 " : "duration-1000 ease-in-out bg-transparent"}`}>
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
