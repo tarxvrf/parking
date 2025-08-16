@@ -20,12 +20,12 @@ function Hero() {
   });
 
   return (
-    <section className="sm:h-screen  flex items-center justify-center pt-20 sm:pt-32 ">
+    <section className="h-screen  flex items-center justify-center pt-20 sm:pt-32 ">
       <div>
         {images.map((img, index) => (
           <div
             key={index}
-            className={`absolute inset-0 sm:bg-cover sm:bg-center bg-contain bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
             style={{ backgroundImage: `url(/images/${img})` }}

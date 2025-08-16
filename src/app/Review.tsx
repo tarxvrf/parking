@@ -4,8 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 function Review() {
@@ -24,8 +22,8 @@ function Review() {
             </p>
           </div>
           <div className="flex justify-center">
-            <Carousel className="w-full max-w-xs">
-              <CarouselContent>
+            <Carousel className="max-w-sm border px-2 py-2">
+              <CarouselContent className="" >
                 <CarouselItem>
                   <div className="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
                     <Image
