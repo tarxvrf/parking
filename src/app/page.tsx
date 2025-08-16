@@ -19,6 +19,7 @@ export default function ParkingCompanyProfile() {
     <Header/>
     <Hero/> 
     <About/>
+    <Service/>
   
     </div>
   );
