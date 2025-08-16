@@ -23,7 +23,7 @@ function Review() {
               layanan kami.
             </p>
           </div>
-          <div className="flex justify-center px-3 py-3">
+          <div className="flex justify-center">
             <Carousel className="w-full max-w-xs">
               <CarouselContent>
                 <CarouselItem>
@@ -91,8 +91,7 @@ function Review() {
                   </div>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              
             </Carousel>
           </div>
         </div>
