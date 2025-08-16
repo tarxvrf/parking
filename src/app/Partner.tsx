@@ -8,7 +8,7 @@ function Partner() {
       {/* Partners Section */}
       <section id="partners" className="py-16 sm:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-10">
+          <div className="relative text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Dipercaya oleh{" "}
               <span className="text-amber-500">Klien Terbaik</span>
@@ -17,6 +17,11 @@ function Partner() {
               Lebih dari 100+ perusahaan dan institusi mempercayakan solusi
               parkir kepada kami.
             </p>
+
+             <div className="absolute -top-6 -right-3 bg-amber-500 text-white px-3 py-3 rounded-xl shadow-lg">
+              <p className="text-3xl font-bold">25+</p>
+              <p className="text-sm">Tahun Pengalaman</p>
+            </div>
           </div>
 
           <div className="">
