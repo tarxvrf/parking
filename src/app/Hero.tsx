@@ -1,11 +1,20 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
+
 function Hero() {
   const images = ["partner3.jpg", "partner1.jpg", "partner2.jpg"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  
+  useEffect(() => {
+ 
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 5000); // ganti gambar tiap 5 detik
+
+    return () => clearInterval(interval);
+  });
 
   return (
     <section className="h-screen  flex items-center justify-center pt-20 sm:pt-32 ">
@@ -31,7 +40,12 @@ function Hero() {
           dan monitoring real-time untuk pengalaman parkir tanpa repot.
         </p>
         <div className="mt-3  flex sm:flex-row gap-4 justify-center">
-        
+          <button className="bg-amber-500 hover:bg-gray-400">
+            Lihat Layanan
+          </button>
+          <button  className="bg-blue-900 hover:bg-gray-400">
+            Hubungi Kami
+          </button>
         </div>
       </div>
       <div>
