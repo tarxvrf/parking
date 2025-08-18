@@ -52,7 +52,7 @@ function Service() {
     <div>
       {" "}
       {/* Services Section */}
-      <section className=" bg-gray-50 py-16 sm:py-20 lg:py-24 px-6 ">
+      <section id="service" className=" bg-gray-50 py-20 sm:py-24 lg:py-28 px-6 ">
         {/* 🔹 Background animasi cahaya */}
         <canvas ref={canvasRef} className="absolute inset-0 z-0" />
         <div className="">
@@ -64,9 +64,8 @@ function Service() {
             <br />
             <span className="text-amber-500">Layanan Kami</span>
           </h2>
-          <div className="w-full sm:max-w-6xl mx-auto mt-10 ">
-            
-            <Swiper
+          <div className="w-full sm:max-w-6xl mx-auto mt-10 ">            
+            <Swiper 
               spaceBetween={20} // jarak antar slide
             // jumlah slide yg tampil
               // tombol next/prev
@@ -75,13 +74,13 @@ function Service() {
               modules={[Navigation, Pagination]}
             >
               {products.map((item, index) => (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <div key={index} className="flex justify-center">
                     <Image
-                      className="rounded-2xl w-full h-48 object-cover px-1 py-1"
+                      className="rounded-2xl w-full h-48 object-cover"
                       src={`${item.img}`}
                       height={500}
-                      width={500}
+                      width={1000}
                       alt={""}
                     ></Image>
                   </div>
