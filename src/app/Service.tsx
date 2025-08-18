@@ -1,11 +1,31 @@
 "use client";
 
-import React, { useRef } from "react";
-
+import React, { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Image from "next/image";
 
 function Service() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [count, setCount] = useState(3); // default desktop
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 400) {
+        setCount(1); // mobile
+      } else {
+        setCount(3); // selain mobile
+      }
+    };
+
+    handleResize(); // cek saat pertama kali render
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const products = [
     {
       name: "Sistem Parkir Otomatis",
@@ -44,31 +64,30 @@ function Service() {
             <br />
             <span className="text-amber-500">Layanan Kami</span>
           </h2>
-          <div className="grid justify-center ">
-            <div className="carousel rounded-box border ">
-              <div className="carousel-item flex gap-3 transition-transform duration-150">
-                {products.map((product, index) => (
-                  <div key={index}>
-                    <div className="card w-96 sm:h-96 bg-gradient-to-r from-amber-500 via-white to-blue-300 bg-[length:400%_400%] animate-gradient rounded-2xlshadow-lg">
-                      <Image
-                        height={500}
-                        width={500}
-                        src={product.img}
-                        alt={product.name}
-                        className="w-full h-40 object-cover bg-cover py-2 px-2 rounded-2xl"
-                      />
-                      <div className="card-body">
-                        <div className="card-title text-lg font-semibold">
-                          {product.name}
-                        </div>
-                        <p className="text-gray-600 text-sm">{product.desc}</p>
-                      </div>
-                    
-                    </div>
+          <div className="w-full sm:max-w-6xl mx-auto mt-10 ">
+            
+            <Swiper
+              spaceBetween={20} // jarak antar slide
+            // jumlah slide yg tampil
+              // tombol next/prev
+              pagination={{ clickable: true }}
+              slidesPerView={count}
+              modules={[Navigation, Pagination]}
+            >
+              {products.map((item, index) => (
+                <SwiperSlide>
+                  <div key={index} className="flex justify-center">
+                    <Image
+                      className="rounded-2xl w-full h-48 object-cover px-1 py-1"
+                      src={`${item.img}`}
+                      height={500}
+                      width={500}
+                      alt={""}
+                    ></Image>
                   </div>
-                ))}
-              </div>
-            </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </section>
