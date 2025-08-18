@@ -13,6 +13,7 @@ function Review() {
     { img: "/images/alfresh.jpeg", review: "lumayan bagus" },
     { img: "/images/boxis.jpeg", review: "sangat bagus" },
     { img: "/images/m165.jpeg", review: "sangat bagus" },
+     { img: "/images/detos.jpg", review: "sangat bagus" },
   ];
   useEffect(() => {
     const handleResize = () => {
@@ -52,11 +53,11 @@ function Review() {
               modules={[Navigation, Pagination]}
             >
               {review.map((item, index=0) => (
-                <SwiperSlide key={index}>
-                  <div key={index} className="flex justify-center">
-                    <div className="card rounded-2xl border">
+                <SwiperSlide key={index} >
+                  <div key={index} className="flex justify-center ">
+                    <div className="card transition-transform duration-200 rounded-2xl w-full p-2 border-amber-500 border-2 animate-gradient">
                       <Image
-                          className="rounded-2xl w-full h-48 object-cover"
+                          className="w-full h-48 object-contain rounded-2xl"
                           src={`${item.img}`}
                           height={500}
                           width={1000}

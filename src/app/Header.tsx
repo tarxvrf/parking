@@ -1,7 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseCircle } from "react-icons/io5";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +28,7 @@ function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <div className="text-white font-bold text-xl">GB Parking</div>
+          <div className="text-white font-bold text-2xl">GB Parking</div>
 
           <nav className="hidden md:flex space-x-6">
             <a
@@ -54,26 +56,36 @@ function Header() {
               Kontak
             </a>
           </nav>
-          <label htmlFor="my-drawer-3">
-            <GiHamburgerMenu className="text-white mt-1 sm:hidden" />{" "}
+          <label htmlFor="close">
+            <GiHamburgerMenu className="text-white text-2xl mt-1 sm:hidden" />{" "}
           </label>
         </div>
+
         <div className="drawer">
-          <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+          <input id="close" type="checkbox" className="drawer-toggle" />
           <div className="drawer-side">
-            <label
-              htmlFor="my-drawer-3"
-              aria-label="close sidebar"
-              className="drawer-overlay"
-            ></label>
-            <ul className="menu bg-base-200 min-h-full w-80 p-4">
+            <ul className="menu bg-gradient-to-r from-amber-500 via-white to-amber-500  bg-[length:400%_400%] animate-gradient relative z-10  min-h-full w-full p-4">
               {/* Sidebar content here */}
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#service">Service</a>
-              </li>
+              <label htmlFor="close" className="drawer-overlay"></label>
+              <label htmlFor="close">
+                <IoCloseCircle className="text-4xl" />
+              </label>
+              <Link
+                href="#about"
+                onClick={() => {
+                  document.getElementById("close")?.click();
+                }} className="text-xl font-bold"
+              >
+                About
+              </Link>
+               <Link
+                href="#service"
+                onClick={() => {
+                  document.getElementById("close")?.click();
+                }} className="text-xl font-bold"
+              >
+                Service
+              </Link>
             </ul>
           </div>
         </div>
