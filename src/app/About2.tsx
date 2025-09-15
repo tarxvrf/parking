@@ -1,20 +1,33 @@
 import React from "react";
 import Image from "next/image";
 
-function About2() {
+function About() {
   return (
     <div>
       {" "}
       {/* About Section */}
       <section id="about" className="py-20 sm:py-24 lg:py-28">
-        <div className="max-9xl-full mx-auto px-20 grid md:grid-cols-2 gap-12 items-center">
-         
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <Image width={500} height={500}
+              src="/images/parking1.jpg"
+              alt="Tentang GB Parking"
+              className="rounded-2xl shadow-lg w-full object-cover"
+            />
+            <div className="absolute -bottom-6 -left-6 bg-amber-500 text-white px-6 py-4 rounded-xl shadow-lg">
+              <p className="text-3xl font-bold">25+</p>
+              <p className="text-sm">Tahun Pengalaman</p>
+            </div>
+          </div>
+
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Tentang <span className="text-amber-500">GB Parking</span>
             </h2>
             <p className="text-gray-600 mb-6">
-              GB Parking , adalah perusahaan swasta nasional yang bergerak dibidang jasa pengelolaan perparkiran, yang resmi hadir dan berbadan hukun sejak tahun 2009 dengan lokasi/project pertama adalah Menara 165 dan telah mendapatkan kepercayaan pengelolaan parkir dan konsultan manajemen parkir dari banyak klien, baik Perusahaan Swasta maupun
+              GB Parking adalah penyedia solusi parkir modern yang mengedepankan
+              teknologi otomatisasi, kemudahan pembayaran, dan keamanan sistem
+              untuk pengalaman parkir yang efisien di seluruh Indonesia.
             </p>
 
             <ul className="space-y-3 mb-6">
@@ -70,7 +83,7 @@ function About2() {
                     stroke="currentColor"
                   >
                     <path
-                      strokeLinecap="round"
+                     strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
                       d="M5 13l4 4L19 7"
@@ -90,20 +103,10 @@ function About2() {
               Hubungi Kami
             </a>
           </div>
-
-           <div className="relative">
-            <Image width={500} height={500}
-              src="/images/about.png"
-              alt="Tentang GB Parking"
-              className="rounded-2xl shadow-lg w-full object-cover"
-            />
-           
-          </div>
-
         </div>
       </section>
     </div>
   );
 }
 
-export default About2;
+export default About;
