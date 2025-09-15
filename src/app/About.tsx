@@ -1,19 +1,28 @@
 import React from "react";
 import Image from "next/image";
 
-function About2() {
+function About() {
   return (
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-24 lg:py-28">
-        <div className="max-9xl-full mx-auto px-20 grid md:grid-cols-2 gap-12 items-center">
+      <section id="about" className="py-20 sm:py-24 lg:pt-28">
+        
+          
+            <Image width={200} height={100}
+              src="/images/aboutt.png"
+              alt="Tentang GB Parking"
+              className="w-full  shadow-2xl object-cover"
+            />
+           
+        
+        <div className="max-w-8xl mx-auto px-20 grid lg:grid-cols-2 gap-12 items-center">
          
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Tentang <span className="text-amber-500">GB Parking</span>
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 text-justify">
               GB Parking , adalah perusahaan swasta nasional yang bergerak dibidang jasa pengelolaan perparkiran, yang resmi hadir dan berbadan hukun sejak tahun 2009 dengan lokasi/project pertama adalah Menara 165 dan telah mendapatkan kepercayaan pengelolaan parkir dan konsultan manajemen parkir dari banyak klien, baik Perusahaan Swasta maupun
             </p>
 
@@ -78,7 +87,7 @@ function About2() {
                   </svg>
                 </span>
                 <span className="text-gray-700">
-                  Monitoring real-time berbasis cloud
+                 Manless System
                 </span>
               </li>
             </ul>
@@ -93,9 +102,9 @@ function About2() {
 
            <div className="relative">
             <Image width={500} height={500}
-              src="/images/about.png"
+              src="/images/palang1.png"
               alt="Tentang GB Parking"
-              className="rounded-2xl shadow-lg w-full object-cover"
+              className="rounded-2xl shadow-2xl w-full object-cover"
             />
            
           </div>
@@ -106,4 +115,4 @@ function About2() {
   );
 }
 
-export default About2;
+export default About;

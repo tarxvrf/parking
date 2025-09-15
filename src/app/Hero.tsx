@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 
 function Hero() {
-  const images = ["partner3.jpg", "partner1.jpg", "partner2.jpg"];
+  const images = ["hero1.png", "hero2.png", "hero3.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const phone = "6281234567890";
   const message = encodeURIComponent(
