@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect,useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import Image from "next/image";
 
 function Service() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+
   const [count, setCount] = useState(3); // default desktop
 
   useEffect(() => {

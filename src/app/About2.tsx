@@ -14,9 +14,10 @@ function About() {
               Transforming Urban <span className="text-amber-500">Mobility</span>
             </h2>
             <p className="text-gray-600 mb-6">
-              GB Parking was founded with a vision to revolutionize the parking industry through innovative technology and exceptional service. Since our inception, we have been at the forefront of developing smart parking solutions that address the growing challenges of urban mobility.
+              <h2>   GB Parking was founded with a vision to revolutionize the parking industry through innovative technology and exceptional service. Since our inception, we have been at the forefront of developing smart parking solutions that address the growing challenges of urban mobility.
 
-              Our comprehensive approach combines IoT technology, mobile applications, and data analytics to create seamless parking experiences for both operators and users. We believe that smart parking is not just about finding a space – it's about creating sustainable, efficient, and user-friendly urban environments.
+              Our comprehensive approach combines IoT technology, mobile applications, and data analytics to create seamless parking experiences for both operators and users. We believe that smart parking is not just about finding a space , its about creating sustainable, efficient, and user-friendly urban environments.
+           </h2>
             </p>
 
 

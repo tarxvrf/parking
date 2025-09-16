@@ -12,7 +12,7 @@ function Hero() {
   );
   const href = `https://wa.me/${phone}?text=${message}`;
 
-   const [isopen,setopen]= useState(false)
+  
     const modalRef = useRef<HTMLIFrameElement>(null);
 
   const lihat = () => {

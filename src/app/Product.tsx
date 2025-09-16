@@ -15,126 +15,130 @@ function Product() {
                     <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
                         <span className="text-white">   PRODUCT</span>
                     </h2>
+                   
+                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
 
-                    <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
-
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Parkir Masuk & Keluar
-                                    -	TIPPO (Tap In Tap Out) System
-                                </h2>
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/bongate.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Akses Parkir Masuk & Keluar
+                                        -	TIPPO (Tap In Tap Out) System
+                                    </h2>
+                                </div>
                             </div>
-                        </div>
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Keluar Pos Hybrid
--	Semi Cashless
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/LPR.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>License Plat Recognition
+                                        LPR
 
-                                </h2>
+                                        -	Semi Cashless
+
+                                    </h2>
+                                </div>
                             </div>
+
+
                         </div>
+                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
 
-
-                    </div>   
-                          <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
-
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Parkir Masuk & Keluar
-                                    -	TIPPO (Tap In Tap Out) System
-                                </h2>
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/livereportapp.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Live Report
+                                    </h2>
+                                </div>
                             </div>
-                        </div>
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Keluar Pos Hybrid
--	Semi Cashless
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/bongate2.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Barrier Gate (Gate Automatic)
+                                        terintegrasi
 
-                                </h2>
+                                        -	Semi Cashless
+
+                                    </h2>
+                                </div>
                             </div>
+
+
                         </div>
+                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
 
-
-                    </div>
-                      <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
-
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Parkir Masuk & Keluar
-                                    -	TIPPO (Tap In Tap Out) System
-                                </h2>
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/control.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Control Room
+                                    </h2>
+                                </div>
                             </div>
-                        </div>
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Parkir Masuk & Keluar
-                                    -	TIPPO (Tap In Tap Out) System
-                                </h2>
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/edc.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Handheld / Mobile Cashier
+                                        (Android system)
+
+                                    </h2>
+                                </div>
                             </div>
+
+
                         </div>
+                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
 
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/ev.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>EV Charging
+                                        -	Menyediakan parangkat untuk pasaokan energi kendaraan lisrik
 
-                    </div>
-                      <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
-
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Parkir Masuk & Keluar
-                                    -	TIPPO (Tap In Tap Out) System
-                                </h2>
+                                    </h2>
+                                </div>
                             </div>
-                        </div>
-                        <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
-                            <Image width={500} height={500}
-                                src="/images/bongate.png"
-                                alt="Tentang GB Parking"
-                                className="rounded-2xl shadow-lg w-full object-cover"
-                            />
-                            <div>
-                                <h2>Akses Parkir Masuk & Keluar
-                                    -	TIPPO (Tap In Tap Out) System
-                                </h2>
+                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/bongate.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Akses Parkir Masuk & Keluar
+                                        -	TIPPO (Tap In Tap Out) System
+                                    </h2>
+                                </div>
                             </div>
+
+
                         </div>
-
-
-                    </div>
-
+                  
 
                 </div>
             </section>
