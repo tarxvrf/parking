@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-function About() {
+function About2() {
   return (
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-24 lg:py-28">
+      <section id="about2" className="border">
         <div className="max-w-8xl mx-auto px-20 grid lg:grid-cols-2 gap-12 items-center">
          
           <div>
@@ -48,7 +48,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="py-16">
+        <div className="">
           <Image width={500} height={500}
               src="/images/visi.png"
               alt="Tentang GB Parking"
@@ -60,4 +60,4 @@ function About() {
   );
 }
 
-export default About;
+export default About2;
