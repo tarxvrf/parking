@@ -15,7 +15,7 @@ function Sistem() {
             <span className="text-white">   GB Parking System</span>
           </h2>
 
-          <div className="max-w-9xl  mx-auto px-20 pt-10 grid lg:grid-cols-2 gap-12">
+          <div className="max-w-9xl  mx-auto px-20 pt-10 grid lg:grid-cols-2 gap-12 lg:gap-2">
 
             <div className="max-w-7xl">
               <Image width={1000} height={500}
