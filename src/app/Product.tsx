@@ -5,7 +5,7 @@ import Image from "next/image";
 function Product() {
     const product = [
         { gbr: "bongate.png", jud: "Akses Parkir Masuk & Keluar TITO (Tap In Tap Out) System" },
-        { gbr: "lpr.png", jud: "License Plat Recognition LPR Semi Cashless" },
+        { gbr: "licences.png", jud: "License Plat Recognition LPR Semi Cashless" },
         { gbr: "livereportapp.png", jud: "tentang live report" },
         { gbr: "gbedc.jpg", jud: "EDC" },
         { gbr: "gblpr.jpg", jud: "lpr" }
