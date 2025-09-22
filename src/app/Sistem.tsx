@@ -45,7 +45,7 @@ function Sistem() {
                   className="rounded-2xl shadow-lg w-full object-cover"
                 />
                 <Image width={500} height={500}
-                  src="/images/lpr.png"
+                  src="/images/licences.png"
                   alt="Tentang GB Parking"
                   className="rounded-2xl shadow-lg w-full object-cover"
                 />
