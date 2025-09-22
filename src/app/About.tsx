@@ -9,7 +9,7 @@ function About() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about" className="py-20 sm:py-24 lg:pt-28">
+      <section id="about" className="py-20 sm:py-32 lg:pt-28">
         
           
         
@@ -60,7 +60,7 @@ function About() {
 
            <div className="relative">
             <Image width={500} height={500}
-              src="/images/palang1.png"
+              src="/images/gbabout.jpg"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-2xl w-full object-cover"
             />

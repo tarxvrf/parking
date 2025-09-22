@@ -65,8 +65,7 @@ function Hero() {
           </button>
           <Link className="bg-green-500 p-2 rounded-xl hover:bg-gray-400" href={href} target="_blank">
             Hubungi Kami
-          </Link>
-         
+          </Link>      
 
         </div>
 
