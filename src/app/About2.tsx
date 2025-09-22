@@ -38,7 +38,7 @@ function About2() {
 
            <div className="relative">
             <Image width={500} height={500}
-              src="/images/meeting.jpeg"
+              src="/images/meet.jpeg"
               alt="Tentang GB Parking"
               className="rounded-2xl shadow-lg w-full object-cover"
             />
