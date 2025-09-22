@@ -30,22 +30,22 @@ function Service() {
     {
       name: "Sistem Parkir Otomatis",
       desc: "Solusi modern untuk manajemen parkir dengan sistem tiket dan sensor otomatis.",
-      img: "/images/qris1.jpg",
+      img: "/images/bongate.png",
     },
     {
       name: "Aplikasi Mobile",
       desc: "Booking dan pembayaran parkir lebih mudah melalui aplikasi smartphone.",
-      img: "/images/flaz.jpg",
+      img: "/images/edc.png",
     },
     {
       name: "Smart Barrier Gate",
       desc: "Gerbang parkir otomatis dengan RFID & ANPR (kamera plat nomor).",
-      img: "/images/gate.jpg",
+      img: "/images/ev.png",
     },
     {
       name: "Manajemen Lahan Parkir",
       desc: "Layanan pengelolaan parkir profesional untuk bisnis & properti.",
-      img: "/images/palang.jpg",
+      img: "/images/lpr.png",
     },
   ];
   return (

@@ -28,8 +28,7 @@ export default function ParkingCompanyProfile() {
       <Sistem/>   
       <Product/>
       <Service />
-      <Partner />
-      <Review />
+      <Partner />    
       <Lokasi />
       <Contact />
       <WA />

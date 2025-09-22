@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { FaComputer } from "react-icons/fa6";
+import { CiCreditCard1 } from "react-icons/ci";
+import { MdOutlineManageAccounts } from "react-icons/md";
 
 function About() {
   return (
@@ -9,12 +12,6 @@ function About() {
       <section id="about" className="py-20 sm:py-24 lg:pt-28">
         
           
-            <Image width={200} height={100}
-              src="/images/aboutt.png"
-              alt="Tentang GB Parking"
-              className="w-full  shadow-2xl object-cover"
-            />
-           
         
         <div className="max-w-8xl mx-auto px-20 grid lg:grid-cols-2 gap-12 items-center">
          
@@ -29,20 +26,7 @@ function About() {
             <ul className="space-y-3 mb-6">
               <li className="flex items-start gap-3">
                 <span className="bg-green-100 text-green-500 rounded-full p-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                  <FaComputer />
                 </span>
                 <span className="text-gray-700">
                   Teknologi Gate Automation canggih
@@ -50,20 +34,7 @@ function About() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="bg-green-100 text-green-500 rounded-full p-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                  <CiCreditCard1 />
                 </span>
                 <span className="text-gray-700">
                   Pembayaran Cashless aman & cepat
@@ -71,20 +42,7 @@ function About() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="bg-green-100 text-green-500 rounded-full p-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                 <MdOutlineManageAccounts />
                 </span>
                 <span className="text-gray-700">
                  Manless System
