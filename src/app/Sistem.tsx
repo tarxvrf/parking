@@ -16,13 +16,13 @@ function Sistem() {
             <span className="text-white">   GB Parking System</span>
           </h2>
 
-          <div className="max-w-9xl  mx-auto px-20 pt-10 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-9xl  mx-auto px-20 pt-10 grid lg:grid-cols-2 gap-12 ">
 
             <div className="">
               <Image width={500} height={500}
                 src="/images/about.png"
                 alt="Tentang GB Parking"
-                className="rounded-2xl shadow-lg w-full object-cover"
+                className="rounded-2xl shadow-lg w-full h-full object-cover"
               />
             </div>
             <div className="md:px-20">
@@ -33,7 +33,7 @@ function Sistem() {
                   className="rounded-2xl shadow-lg w-full object-cover"
                 />
                 <Image width={500} height={500}
-                  src="/images/control.png"
+                  src="/images/controlroom.png"
                   alt="Tentang GB Parking"
                   className="rounded-2xl shadow-lg w-full object-cover"
                 />
@@ -58,7 +58,7 @@ function Sistem() {
                   className="rounded-2xl shadow-lg w-full object-cover"
                 />
                 <Image width={500} height={500}
-                  src="/images/tap.png"
+                  src="/images/dinamic.png"
                   alt="Tentang GB Parking"
                   className="rounded-2xl shadow-lg w-full h-38 object-cover"
                 />
