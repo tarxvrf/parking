@@ -16,13 +16,19 @@ function Product() {
                         <span className="text-white">   PRODUCT</span>
                     </h2>
                    
+<<<<<<< HEAD
                         <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-3 gap-12 pb-5 items-center">
 
                             <div className="max-w-4xl rounded-2xl bg-white p-2 gap-12">
+=======
+                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2  items-center">
+
+                            <div className="grid sm:grid-cols-2 rounded-2xl bg-white p-2 gap-12">
+>>>>>>> 08ff66ee0b4311948ce11223ff9ba9122e651486
                                 <Image width={500} height={500}
-                                    src="/images/bongate.png"
+                                    src="/images/about.png"
                                     alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                    className="rounded-2xl shadow-lg w-32 h-32 object-cover object-center"
                                 />
                                 <div>
                                     <h2>Akses Parkir Masuk & Keluar
@@ -30,11 +36,15 @@ function Product() {
                                     </h2>
                                 </div>
                             </div>
+<<<<<<< HEAD
                             <div className="max-w-4xl rounded-2xl  bg-white p-2 gap-12">
+=======
+                            <div className="grid sm:grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+>>>>>>> 08ff66ee0b4311948ce11223ff9ba9122e651486
                                 <Image width={500} height={500}
                                     src="/images/lpr.png"
                                     alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                    className="rounded-2xl shadow-lg w-32 h-32 object-cover"
                                 />
                                 <div>
                                     <h2>License Plat Recognition
@@ -48,9 +58,13 @@ function Product() {
 
 
                         </div>
-                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
+                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 items-center">
 
+<<<<<<< HEAD
                             <div className="max-w-4xl rounded-2xl bg-white p-2 gap-12">
+=======
+                            <div className="max-w-4xl grid sm:grid-cols-2 rounded-2xl bg-white p-2 gap-12">
+>>>>>>> 08ff66ee0b4311948ce11223ff9ba9122e651486
                                 <Image width={500} height={500}
                                     src="/images/livereportapp.png"
                                     alt="Tentang GB Parking"
@@ -61,13 +75,35 @@ function Product() {
                                     </h2>
                                 </div>
                             </div>
+<<<<<<< HEAD
                            
+=======
+                            <div className="max-w-4xl grid sm:grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/bongate2.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Barrier Gate (Gate Automatic)
+                                        terintegrasi
+
+                                        -	Semi Cashless
+
+                                    </h2>
+                                </div>
+                            </div>
+>>>>>>> 08ff66ee0b4311948ce11223ff9ba9122e651486
 
 
                         </div>
-                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
+                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 items-center">
 
+<<<<<<< HEAD
                             <div className="max-w-4xl rounded-2xl bg-white p-2 gap-12">
+=======
+                            <div className="max-w-4xl grid sm:grid-cols-2 rounded-2xl bg-white p-2 gap-12">
+>>>>>>> 08ff66ee0b4311948ce11223ff9ba9122e651486
                                 <Image width={500} height={500}
                                     src="/images/control.png"
                                     alt="Tentang GB Parking"
@@ -78,7 +114,11 @@ function Product() {
                                     </h2>
                                 </div>
                             </div>
+<<<<<<< HEAD
                             <div className="max-w-4xl rounded-2xl  bg-white p-2 gap-12">
+=======
+                            <div className="max-w-4xl grid sm:grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+>>>>>>> 08ff66ee0b4311948ce11223ff9ba9122e651486
                                 <Image width={500} height={500}
                                     src="/images/edc.png"
                                     alt="Tentang GB Parking"
@@ -94,7 +134,7 @@ function Product() {
 
 
                         </div>
-                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
+                        <div className="max-w-8xl  mx-auto px-20 grid sm:grid-cols-2 gap-12 items-center">
 
                             <div className="max-w-4xl rounded-2xl bg-white p-2 gap-12">
                                 <Image width={500} height={500}
@@ -109,7 +149,23 @@ function Product() {
                                     </h2>
                                 </div>
                             </div>
+<<<<<<< HEAD
                          
+=======
+                            <div className="max-w-4xl grid sm:grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
+                                <Image width={500} height={500}
+                                    src="/images/bongate.png"
+                                    alt="Tentang GB Parking"
+                                    className="rounded-2xl shadow-lg w-full object-cover"
+                                />
+                                <div>
+                                    <h2>Akses Parkir Masuk & Keluar
+                                        -	TIPPO (Tap In Tap Out) System
+                                    </h2>
+                                </div>
+                            </div>
+
+>>>>>>> 08ff66ee0b4311948ce11223ff9ba9122e651486
 
                         </div>
                   

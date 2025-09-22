@@ -9,9 +9,9 @@ function Sistem() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="sistem" className="py-20  bg-amber-600 sm:py-24 lg:pt-28">
+      <section id="sistem" className="py-20 sm:py-24 lg:pt-28">
 
-        <div className="max-w-8xl bg-amber-600">
+        <div className="sm:max-w-8xl bg-amber-600 mx-auto ">
           <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
             <span className="text-white">   GB Parking System</span>
           </h2>
@@ -20,7 +20,7 @@ function Sistem() {
 
             <div className="">
               <Image width={500} height={500}
-                src="/images/bongate.png"
+                src="/images/about.png"
                 alt="Tentang GB Parking"
                 className="rounded-2xl shadow-lg w-full object-cover"
               />
