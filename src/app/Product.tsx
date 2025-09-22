@@ -9,136 +9,60 @@ function Product() {
         <div>
             {" "}
             {/* product Section */}
-            <section id="product" className="py-20 sm:py-24 lg:pt-28">
+            <section id="product" className="py-20 bg-amber-600 sm:py-24 lg:pt-28">
 
-                <div className="max-w-8xl bg-amber-600">
+                <div className="max-w-8xl bg-amber-600 ">
                     <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
                         <span className="text-white">   PRODUCT</span>
                     </h2>
-                   
-                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
 
-                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/bongate.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>Akses Parkir Masuk & Keluar
-                                        -	TIPPO (Tap In Tap Out) System
-                                    </h2>
-                                </div>
+                    <div className="max-w-8xl  mx-auto pt-15 px-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-5 items-center">
+                        <div className="max-w-xl flex flex-col rounded-2xl bg-white p-2 gap-12">
+                            <Image width={500} height={500}
+                                src="/images/bongate.png"
+                                alt="Tentang GB Parking"
+                                className="rounded-2xl shadow-lg w-full h-64 object-cover"
+                            />
+                            <div>
+                                <h2>Akses Parkir Masuk & Keluar
+                                    -	TIPPO (Tap In Tap Out) System
+                                </h2>
                             </div>
-                            <div className="max-w-4xl rounded-2xl  bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/lpr.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>License Plat Recognition
-                                        LPR
-
-                                        -	Semi Cashless
-
-                                    </h2>
-                                </div>
-                            </div>
-
-
                         </div>
-                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
 
-                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/livereportapp.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>Live Report
-                                    </h2>
-                                </div>
+                        <div className="max-w-xl flex flex-col rounded-2xl  bg-white p-2 gap-12">
+                            <Image width={500} height={500}
+                                src="/images/lpr.png"
+                                alt="Tentang GB Parking"
+                                className="rounded-2xl shadow-lg w-full h-64 object-cover"
+                            />
+                            <div>
+                                <h2>License Plat Recognition
+                                    LPR
+
+                                    -	Semi Cashless
+
+                                </h2>
                             </div>
-                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/bongate2.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>Barrier Gate (Gate Automatic)
-                                        terintegrasi
-
-                                        -	Semi Cashless
-
-                                    </h2>
-                                </div>
-                            </div>
-
-
                         </div>
-                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
 
-                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/control.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>Control Room
-                                    </h2>
-                                </div>
+                         <div className="max-w-xl flex flex-col rounded-2xl bg-white p-2 gap-12">
+                            <Image width={500} height={500}
+                                src="/images/livereportapp.png"
+                                alt="Tentang GB Parking"
+                                className="rounded-2xl shadow-lg w-full h-64 object-cover"
+                            />
+                            <div>
+                                <h2>Akses Parkir Masuk & Keluar
+                                    -	TIPPO (Tap In Tap Out) System
+                                </h2>
                             </div>
-                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/edc.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>Handheld / Mobile Cashier
-                                        (Android system)
-
-                                    </h2>
-                                </div>
-                            </div>
-
-
                         </div>
-                        <div className="max-w-8xl  mx-auto px-20 grid lg:grid-cols-2 gap-12 pb-5 items-center">
-
-                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/ev.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>EV Charging
-                                        -	Menyediakan parangkat untuk pasaokan energi kendaraan lisrik
-
-                                    </h2>
-                                </div>
-                            </div>
-                            <div className="max-w-4xl grid grid-cols-2 rounded-2xl  bg-white p-2 gap-12">
-                                <Image width={500} height={500}
-                                    src="/images/bongate.png"
-                                    alt="Tentang GB Parking"
-                                    className="rounded-2xl shadow-lg w-full object-cover"
-                                />
-                                <div>
-                                    <h2>Akses Parkir Masuk & Keluar
-                                        -	TIPPO (Tap In Tap Out) System
-                                    </h2>
-                                </div>
-                            </div>
 
 
-                        </div>
-                  
+                    </div>
+
+
 
                 </div>
             </section>

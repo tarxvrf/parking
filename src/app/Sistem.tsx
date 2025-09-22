@@ -9,7 +9,7 @@ function Sistem() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="sistem" className="py-20 sm:py-24 lg:pt-28">
+      <section id="sistem" className="py-20 bg-amber-600 sm:py-24 lg:pt-28">
 
         <div className="sm:max-w-8xl bg-amber-600 mx-auto ">
           <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
