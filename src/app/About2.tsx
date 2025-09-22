@@ -6,7 +6,7 @@ function About2() {
     <div>
       {" "}
       {/* About Section */}
-      <section id="about2" className="border">
+      <section id="about2" className="">
         <div className="max-w-8xl mx-auto px-20 grid lg:grid-cols-2 gap-12 items-center">
          
           <div>
