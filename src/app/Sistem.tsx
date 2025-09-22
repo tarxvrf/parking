@@ -15,13 +15,13 @@ function Sistem() {
             <span className="text-white">   GB Parking System</span>
           </h2>
 
-          <div className="max-w-9xl  mx-auto px-20 pt-10 grid lg:grid-cols-2 gap-12 ">
+          <div className="max-w-9xl  mx-auto px-20 pt-10 grid lg:grid-cols-2 gap-12">
 
-            <div className="">
-              <Image width={500} height={500}
+            <div className="max-w-7xl">
+              <Image width={1000} height={500}
                 src="/images/about.png"
                 alt="Tentang GB Parking"
-                className="rounded-2xl shadow-lg w-full h-full object-cover"
+                className="rounded-2xl shadow-lg w-full h-full object"
               />
             </div>
             <div className="md:px-20">
@@ -29,37 +29,37 @@ function Sistem() {
                 <Image width={500} height={500}
                   src="/images/control.png"
                   alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-40 object-cover"
+                  className="rounded-2xl shadow-lg w-full h-52 object-cover"
                 />
                 <Image width={500} height={500}
                   src="/images/dispenser.jpg"
                   alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-40 object-cover"
+                  className="rounded-2xl shadow-lg w-full h-52 object-cover"
                 />
               </div>
               <div className="max-w-2xl grid grid-cols-2 gap-2 py-2">
                 <Image width={500} height={500}
-                  src="/images/bongate.png"
+                  src="/images/posmanles.jpg"
                   alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-40 object-cover"
+                  className="rounded-2xl shadow-lg w-full h-52 object-cover"
                 />
                 <Image width={500} height={500}
                   src="/images/terpalgate.png"
                   alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-40 object-cover"
+                  className="rounded-2xl shadow-lg w-full h-52 object-cover"
                 />
               </div>
 
-              <div className="max-w-2xl grid grid-cols-2 h-40 gap-2 py-2">
+              <div className="max-w-2xl grid grid-cols-2 h-52 gap-2 py-2">
                 <Image width={500} height={500}
                   src="/images/dinamic2.png"
                   alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-40 object-cover"
+                  className="rounded-2xl shadow-lg w-full h-52 object-cover"
                 />
                 <Image width={500} height={500}
                   src="/images/akseslpr.png"
                   alt="Tentang GB Parking"
-                  className="rounded-2xl shadow-lg w-full h-40 object-cover"
+                  className="rounded-2xl shadow-lg w-full h-52 object-cover"
                 />
               </div>
 
