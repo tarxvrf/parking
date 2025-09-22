@@ -50,7 +50,7 @@ function Product() {
                     </h2>
                     <div  className="max-w-8xl  mx-auto pt-15 px-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-5  items-center">
                         {product.map((items, index) =>
-                           ( <div  key={index} onClick={()=>showmodal(items.id)}   className="max-w-xl hover:shadow-4xl h-100 shadow-2xl hover:scale-105 duration-200 transform flex flex-col rounded-2xl bg-white p-2 gap-12">
+                           ( <div  key={index} onClick={()=>showmodal(items.id)}   className="max-w-xl hover:shadow-4xl shadow-2xl hover:scale-105 duration-200 transform flex flex-col rounded-2xl bg-white p-2 gap-12">
                                 <Image  width={500} height={500}
                                     src={`/images/${items.gbr}`}
                                     alt="Tentang GB Parking"
