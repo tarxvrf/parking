@@ -6,7 +6,9 @@ function Product() {
     const product = [
         { gbr: "bongate.png", jud: "Akses Parkir Masuk & Keluar TITO (Tap In Tap Out) System" },
         { gbr: "lpr.png", jud: "License Plat Recognition LPR Semi Cashless" },
-        { gbr: "livereportapp.png", jud: "tentang live report" }
+        { gbr: "livereportapp.png", jud: "tentang live report" },
+        { gbr: "gbedc.jpg", jud: "EDC" },
+        { gbr: "gblpr.jpg", jud: "lpr" }
     ]
      const modalref = useRef<HTMLDivElement>(null)
     const showmodal =()=>{
@@ -26,7 +28,7 @@ function Product() {
                     <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
                         <span className="text-white">PRODUCT</span>
                     </h2>
-                    <div ref={modalref} className="max-w-8xl  mx-auto pt-15 px-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-5 items-center">
+                    <div ref={modalref} className="max-w-8xl  mx-auto pt-15 px-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-5 items-center">
                         {product.map((items, index) =>
                             <div key={index} onClick={showmodal}  className="max-w-xl hover:scale-105 duration-200 transform flex flex-col rounded-2xl bg-white p-2 gap-12">
                                 <Image width={500} height={500}
