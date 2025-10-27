@@ -21,39 +21,45 @@ function Header() {
     <div className=" ">
       {/* Header */}
       <header
-        className={`fixed bg-amber-300 top-0 left-0 w-full z-50  ${
+        className={`fixed bg-amber-600 top-0 left-0 w-full z-50  ${
           isScrolled
             ? "bg-amber-500 shadow-xl rounded-b-lg ease-in-out duration-1000 "
             : "duration-1000 ease-in-out bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <div className="text-white font-bold text-2xl">GB Parking</div>
+          <div className="text-black font-bold text-2xl">GB Facility</div>
 
           <nav className="hidden md:flex space-x-6">
             <a
               href="#home"
-              className="text-white hover:text-amber-400 font-bold"
+              className="text-black hover:text-amber-400 font-bold"
             >
               Home
             </a>
             <a
-              href="#services"
-              className="text-white hover:text-amber-400 font-bold"
+              href="/Service"
+              className="text-black hover:text-amber-400 font-bold"
             >
-              Layanan
+              Layanan Kami
             </a>
             <a
               href="#portfolio"
-              className="text-white hover:text-amber-400 font-bold"
+              className="text-black hover:text-amber-400 font-bold"
             >
-              Portfolio
+              Artikel Berita
             </a>
             <a
               href="#contact"
-              className="text-white hover:text-amber-400 font-bold"
+              className="text-black hover:text-amber-400 font-bold"
             >
-              Kontak
+             Hubungi Kami
+            </a>
+            <a
+              href="#contact"
+              className="text-black hover:text-amber-400 font-bold"
+            >
+             Lowongan Kerja
             </a>
           </nav>
           <label htmlFor="close">

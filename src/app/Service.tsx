@@ -10,86 +10,89 @@ import Image from "next/image";
 
 function Service() {
 
-  const [count, setCount] = useState(3); // default desktop
+ 
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 400) {
-        setCount(1); // mobile
-      } else {
-        setCount(3); // selain mobile
-      }
-    };
-
-    handleResize(); // cek saat pertama kali render
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  const products = [
-    {
-      name: "Sistem Parkir Otomatis",
-      desc: "Solusi modern untuk manajemen parkir dengan sistem tiket dan sensor otomatis.",
-      img: "/images/bongate.png",
-    },
-    {
-      name: "Aplikasi Mobile",
-      desc: "Booking dan pembayaran parkir lebih mudah melalui aplikasi smartphone.",
-      img: "/images/edc.png",
-    },
-    {
-      name: "Smart Barrier Gate",
-      desc: "Gerbang parkir otomatis dengan RFID & ANPR (kamera plat nomor).",
-      img: "/images/ev.png",
-    },
-    {
-      name: "Manajemen Lahan Parkir",
-      desc: "Layanan pengelolaan parkir profesional untuk bisnis & properti.",
-      img: "/images/lpr.png",
-    },
-  ];
   return (
-    <div>
-      {" "}
-      {/* Services Section */}
-      <section id="service" className=" bg-gray-50 py-20 sm:py-24 lg:py-28 px-6 ">
-        {/* 🔹 Background animasi cahaya */}
-        <div className="">
-          <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
-            Produk{" "}
-            <span>
-              <br /> &
-            </span>{" "}
-            <br />
-            <span className="text-amber-500">Layanan Kami</span>
-          </h2>
-          <div className="rounded-2xl bg-gradient-to-r from-amber-500 via-white to-blue-900 bg-[length:400%_400%] animate-gradient relative z-10 w-full sm:max-w-6xl mx-auto mt-10 ">            
-            <Swiper 
-              spaceBetween={20} // jarak antar slide
-            // jumlah slide yg tampil
-              // tombol next/prev
-              pagination={{ clickable: true }}
-              slidesPerView={count}
-              modules={[Navigation, Pagination]}
-            >
-              {products.map((item, index) => (
-                <SwiperSlide key={index} >
-                  <div key={index} className="flex justify-center p-8">
-                    <Image
-                      className=" hover:scale-110 hover:shadow-2xl transition-transform duration-200 rounded-2xl w-full h-48 object-cover shadow-xl"
-                      src={`${item.img}`}
-                      height={500}
-                      width={1000}
-                      alt={""}
-                    ></Image>
+   <div>
+        {" "}
+        {/* About Section */}
+        <section id="about" className="py-20 sm:py-32 lg:pt-28">
+  
+  
+  
+          <div className="max-w-8xl mx-auto px-20 grid gap-12 items-center">
+  
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+               Layanan Tenaga <span className="text-amber-500">Pengamanan</span>
+              </h2>
+              <div className="grid grid-cols-[auto_1fr] mx-auto p-10 gap-10 max-w-7xl items-center">
+                <div className="relative">
+                  <Image width={500} height={500}
+                    src="/images/logogbabout.png"
+                    alt="Tentang GB Parking"
+                    className="rounded-2xl shadow-2xl object-cover h-64 w-64 right-0"
+                  />
+                </div>
+                <div className="text-gray-600 mb-6 text-2xl text-justify ">
+                  <span className="font-bold">GB Facility</span> adalah perusahaan Alih Daya telah beroperasi sejak tahun 2005 dibawah naungan PT Gerbang Berkah Solusi Indonesia hingga saat ini telah mengelola ribuan karyawan di seluruh kota  besar di Indonesia
+                  GB Faclity memberikan layanan terpadu dan terintegrasi kepada perusahaan yang memerlukan layanan pengelolaan gedung/kantor dan berbagai macam bentuk layanan lainnya.
+                </div>
+              </div>
+  
+              <div className="grid lg:grid-cols-2 items-center lg:gap-10">
+                <div className="text-gray-600 mb-6 text-justify">
+                  <span className="font-bold">GB Facility</span> memberikan Multi-Layanan menjadikan layanan Fasilitas Terpadu dalam berbagai layanan bisnis dan industry, yang melupitu antara lain :
+                  <ul>
+                    <li>
+                      1.	Layanan Penyediaan Tenaga Pengamanan
+                    </li>
+                    <li>
+                      2.	Layanan Penyediaan Tenaga Kerja Pabrik, Operator, dll
+                    </li>
+                    <li>
+                      3.	Layanan Penyediaan Tenaga Kebersihan (cleaning service) dan Office Boy
+                    </li>
+                  </ul>
+  
+                  <p className="text-gray-600 mb-6 text-justify">
+                    Kehadiran GB Facility untuk memberikan nilai tambah, memelihara dan mengoptimalkan tempat milik mitra/pelanggan dan berkontribusi pada harapan mitra/pengguna jasa kami, agar perusahaan mitra/pengguna jasama kami dapat lebih focus dalam pengembangan bisnisnya.
+                  </p>
+  
+                  <div className="text-gray-600 mb-6 text-justify">
+                    <h1 className="font-bold">PENGELOLAAN TENAGA KERJA OUTSOURCING</h1>
+  
+                    Tenaga Kerja Outsourcing adalah tenaga kerja dari pihak ketiga untuk menyelesaikan suatu pekerjaan pada perusahaan pengguna jasa.
+                    Perusahaan outsourcing merupakan perusahaan yang menyediakan jasa dan menyalurkan tenaga kerja dengan keahlian tertentu ke perusahaan yang membutuhkan.
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                  <div className="text-gray-600 mb-6 text-justify">
+                    <h1 className="font-bold">Dasar Hukum Utama</h1>
+                    <span className="font-bold">Undang-Undang No. 13 Th. 2003 tentang Ketenagakerjaan (UU Ketenagakerjaan) :</span>
+                    Sebelum UU Cipta Kerja, outsourcing diatur dalam Pasal 64 dan 66, yang mengizinkan penyerahan pekerjaan melalui perjanjian pemborongan atau penyediaan jasa pekerja/buruh
+                  </div>
+  
+                  <div className="text-gray-600 mb-6 text-justify">
+                    <span className="font-bold">Undang-Undang No. 6 Th. 2023 tentang Penetapan Perpu Cipta Kerja Menjadi Undang-Undang :</span>
+                    UU ini mengubah dan memperbarui ketentuan mengenai outsourcing dalam UU Ketenagakerjaan, mengizinkan penyerahan sebagian pekerjaan kepada pihak lain dengan perjanjian tertulis.
+                  </div>
+  
+                  <div className="text-gray-600 mb-6 text-justify">
+                    <span>Peraturan Pemerintah Nomor 35 Tahun 2021</span> tentang Perjanjian Kerja Waktu Tertentu, Alih Daya, Waktu Kerja dan Waktu Istirahat, dan Pemutusan Hubungan Kerja :
+                    PP ini merupakan aturan turunan dari UU Cipta Kerja yang lebih rinci mengatur tentang alih daya, termasuk ketentuan mengenai izin usaha dan perlindungan pekerja.
+                  </div>
+                </div>
+                <div>
+                  <Image src={"/images/aboutgbrpekerja.png"} className="relative w-full bg-cover" width={500} height={500} alt={""} >
+                  </Image>
+                </div>
+  
+              </div>
+  
+            </div>
+  
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
   );
 }
 

@@ -24,11 +24,7 @@ export default function ParkingCompanyProfile() {
       <Hero />
       <About/> 
       <About2/>  
-      <Sistem/>   
-      <Product/>
-      <Service />
-      <Partner />    
-      <Lokasi />
+       <Product/>      
       <Contact />
       <WA />
       <Footer />
